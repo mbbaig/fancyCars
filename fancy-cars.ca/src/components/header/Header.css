@@ -1,0 +1,8 @@
+.header {
+    margin: 0 auto 5vh;
+    display: flex;
+}
+
+.header > h3 {
+    margin: auto 5vw;
+}

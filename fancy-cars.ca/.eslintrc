@@ -1,0 +1,40 @@
+{
+    "extends": "airbnb-base",
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "settings": {
+        "react": {
+            "createClass": "createReactClass",
+            "pragma": "React", 
+            "version": "16.0"
+        },
+        "propWrapperFunctions": [ "forbidExtraProps" ]
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "json",
+        "react"
+    ],
+    "rules": {
+        "indent": ["error", 4],
+        "no-const-assign": "error",
+        "no-this-before-super": "error",
+        "no-undef": "error",
+        "no-unreachable": "error",
+        "no-unused-vars": "off",
+        "constructor-super": "error",
+        "valid-typeof": "error",
+        "no-mixed-spaces-and-tabs": "error",
+        "no-lonely-if": "error"
+    }
+}
