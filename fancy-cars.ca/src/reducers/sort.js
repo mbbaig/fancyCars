@@ -1,6 +1,7 @@
 import { Actions } from '../utils/constants';
+import InitState from '../utils/MOCK_DATA.json';
 
-const sort = (state = [], action) => {
+const sort = (state = InitState, action) => {
     switch (action.type) {
     case Actions.SORT_BY_NAME:
         return state.map(car => car.name).sort();

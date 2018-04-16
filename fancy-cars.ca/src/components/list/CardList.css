@@ -1,0 +1,8 @@
+.CardList {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
