@@ -6,6 +6,6 @@ export const SortFilters = {
 };
 
 export const Actions = {
-    SORT_BY_NAME: 'SORT_BY_NAME',
-    SORT_BY_AVAILABILITY: 'SORT_BY_AVAILABILITY',
+    SORT_LIST: 'SORT_LIST',
+    SET_FILTER: 'SET_FILTER',
 };

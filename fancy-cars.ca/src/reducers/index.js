@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import sort from './sort';
+import cars from './cars';
+import filter from './filter';
 
 export default combineReducers({
-    sort,
+    cars,
+    filter,
 });

@@ -1,17 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Card from '../card/Card';
+import SortBar from '../sort-bar/SortBar';
 import './CardList.css';
 
-const CardList = ({ cars }) => (
-    <div className="CardList">
-        {
-            cars.map(car =>
-                <Card
-                    key={car.id}
-                    {...car}
-                />)
-        }
+const CardList = ({ cars, filterAction, filter }) => (
+    <div>
+        <SortBar labelSort="Filter By: " filterAction={filterAction} filter={filter} />
+        <div className="CardList">
+            {
+                cars.map(car =>
+                    <Card
+                        key={car.id}
+                        {...car}
+                    />)
+            }
+        </div>
     </div>
 );
 
@@ -25,6 +29,7 @@ CardList.propTypes = {
         year: PropTypes.number,
         availability: PropTypes.string.isRequired,
     }).isRequired).isRequired,
+    filterAction: PropTypes.func.isRequired,
 };
 
 export default CardList;
