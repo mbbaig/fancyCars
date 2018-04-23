@@ -23,7 +23,6 @@ const SortBar = ({
 SortBar.propTypes = {
     labelSort: PropTypes.string.isRequired,
     filter: PropTypes.string.isRequired,
-    filterAction: PropTypes.func.isRequired,
 };
 
 export default SortBar;

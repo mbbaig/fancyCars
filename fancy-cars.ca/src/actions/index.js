@@ -1,8 +1,12 @@
 import { Actions } from '../utils/constants';
 
-export const sortList = filter => ({
-    type: Actions.SORT_LIST,
-    filter,
+export const getData = () => ({
+    type: Actions.GET_INITIAL_DATA,
+});
+
+export const setData = data => ({
+    type: Actions.SET_INITIAL_DATA,
+    data,
 });
 
 export const setFilter = filter => ({

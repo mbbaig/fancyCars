@@ -6,6 +6,7 @@ export const SortFilters = {
 };
 
 export const Actions = {
-    SORT_LIST: 'SORT_LIST',
     SET_FILTER: 'SET_FILTER',
+    GET_INITIAL_DATA: 'GET_INITIAL_LOAD',
+    SET_INITIAL_DATA: 'SET_INITIAL_LOAD',
 };

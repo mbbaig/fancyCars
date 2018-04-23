@@ -4,9 +4,9 @@ import Card from '../card/Card';
 import SortBar from '../sort-bar/SortBar';
 import './CardList.css';
 
-const CardList = ({ cars, filterAction, filter }) => (
+const CardList = ({ cars, filter, filterAction }) => (
     <div>
-        <SortBar labelSort="Filter By: " filterAction={filterAction} filter={filter} />
+        <SortBar labelSort="Filter/Sort By: " filter={filter} filterAction={filterAction} />
         <div className="CardList">
             {
                 cars.map(car =>
@@ -29,7 +29,6 @@ CardList.propTypes = {
         year: PropTypes.number,
         availability: PropTypes.string.isRequired,
     }).isRequired).isRequired,
-    filterAction: PropTypes.func.isRequired,
 };
 
 export default CardList;

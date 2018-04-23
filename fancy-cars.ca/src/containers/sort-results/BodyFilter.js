@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { SortFilters } from '../../utils/constants';
-import { sortList, setFilter } from '../../actions';
 import CardList from '../../components/list/CardList';
+import { setFilter } from '../../actions';
 
 const filterCars = (cars, filter) => {
     switch (filter) {
@@ -32,7 +32,6 @@ const mapDispatchToProps = dispatch => ({
     filterAction: (e) => {
         e.preventDefault();
         dispatch(setFilter(e.target.value));
-        dispatch(sortList(e.target.value));
     },
 });
 
